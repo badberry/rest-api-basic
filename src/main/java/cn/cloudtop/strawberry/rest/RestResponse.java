@@ -5,7 +5,7 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * Created by jackie on 16-4-26
  */
-public class RestResponse implements Response {
+public abstract class RestResponse implements Response {
 
     @ApiModelProperty("是否成功")
     private boolean success;
