@@ -2,10 +2,12 @@ package cn.cloudtop.strawberry.rest;
 
 import io.swagger.annotations.ApiModelProperty;
 
+import java.io.Serializable;
+
 /**
  * Created by jackie on 16-4-26
  */
-public abstract class RestResponse implements Response {
+public abstract class RestResponse implements Response, Serializable {
 
     @ApiModelProperty("是否成功")
     private boolean success;
